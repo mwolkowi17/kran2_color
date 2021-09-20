@@ -28,20 +28,20 @@ let actionbutton = document.getElementById("start_button")
 
 actionbutton.addEventListener("click",function(){
   if(ifPlayed===false){
-    mixer.setTime(0);
+    mixer2.setTime(0);
   }
   
 
-  mixer.timeScale=1
+  mixer2.timeScale=1
   closed=true;
- action.play();
+ action2.play();
  
 },false)
 
 
 let stopbutton = document.getElementById("stop_button");
 stopbutton.addEventListener("click", function(){
-  mixer.timeScale=0
+  mixer2.timeScale=0
  
   ifPlayed=true;
  
@@ -51,16 +51,16 @@ let resetbutton = document.getElementById("reset_button");
 resetbutton.addEventListener("click", function(){
   ifPlayed=false;
   if(ifPlayed===false){
-    mixer.setTime(0);
+    mixer2.setTime(0);
   };
-  mixer.timeScale=1;
-  mixer.timeScale=0;
+  mixer2.timeScale=1;
+  mixer2.timeScale=0;
 }, false)
 
 let closebutton = document.getElementById("close_button");
 closebutton.addEventListener("click", function(){
   closed=false;
-  mixer.timeScale=1;
+  mixer2.timeScale=1;
 }, false)
 
     
@@ -87,14 +87,15 @@ const animate = function () {
     
   
     controls.update()
-    if (mixer ) mixer.update( delta );
-    if (mixer.time>5 && closed===true){ 
-      mixer.timeScale=0;
+    if (mixer2 ) mixer2.update( delta );
+    if (mixer2.time>5 && closed===true){ 
+      mixer2.timeScale=0;
      }
 
-    if (mixer.time>10 && closed===false){
-      mixer.timeScale=0;
+    if (mixer2.time>10 && closed===false){
+      mixer2.timeScale=0;
     }
+    
 
 };
 

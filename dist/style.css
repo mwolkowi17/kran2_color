@@ -21,3 +21,9 @@
     bottom: 25px;
     left: 180px;;
 }
+
+#color_button{
+    position: absolute;
+    bottom: 25px;
+    left: 420px;
+}

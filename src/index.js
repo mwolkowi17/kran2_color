@@ -63,6 +63,12 @@ closebutton.addEventListener("click", function(){
   mixer2.timeScale=1;
 }, false)
 
+const colorbutton = document.getElementById("color_button");
+
+colorbutton.addEventListener("click", function(){
+  model_kurek="./zawor_kulowy_three_kula3_kurek_blue.glb"
+}, false);
+
     
 camera.position.z = 8;
 camera.position.y = 1.5;

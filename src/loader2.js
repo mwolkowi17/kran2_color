@@ -30,6 +30,7 @@ colorbutton.addEventListener("click", function(){
   gltfLoader2.load(model_kurek, (gltf) => {
     root = gltf.scene;
     const anim = gltf.animations;
+    //root.scale.x=2;
     scene.add(root); //co zrobic z tym?
     mixer2 = new THREE.AnimationMixer(root);
     

@@ -24,11 +24,11 @@
 
 #color_button{
     position: absolute;
-    bottom: 25px;
-    left: 420px;
+    top: 75px;
+    right: 100px;
 }
 #color_back_button{
     position: absolute;
-    bottom: 25px;
-    left: 500px;
+    top: 25px;
+    right: 100px;
 }

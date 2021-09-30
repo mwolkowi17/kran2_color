@@ -29,6 +29,12 @@
 }
 #color_back_button{
     position: absolute;
+    top: 125px;
+    right: 100px;
+}
+
+#tap_color_text{
+    position: absolute;
     top: 25px;
     right: 100px;
 }
